@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+  map.todays 'projects/todays', :controller => :projects, :action => :todays
+  map.resources :projects
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
